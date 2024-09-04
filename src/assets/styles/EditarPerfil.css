@@ -1,0 +1,77 @@
+.editar-perfil-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editar-perfil-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .editar-perfil-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .editar-perfil-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .editar-perfil-container input[type="text"],
+  .editar-perfil-container input[type="email"],
+  .editar-perfil-container input[type="tel"],
+  .editar-perfil-container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .perfil-photo-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-buttons button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .form-buttons button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  .form-buttons button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .form-buttons button[type="button"]:hover {
+    background-color: #c82333;
+  }
+  

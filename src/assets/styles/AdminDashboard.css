@@ -1,0 +1,175 @@
+/* Fondo del dashboard para que ocupe toda la pantalla */
+.admin-dashboard-background {
+    background-image: url('../assets/images/fondo-admin.jpg'); /* Cambia la ruta según tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho completo */
+  }
+  
+  /* Contenedor principal del dashboard */
+  .admin-dashboard-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* Estilo del título */
+  h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Botón de agregar vehículo */
+  .agregar-vehiculo-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .agregar-vehiculo-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Contenedor del filtro */
+  .filtro-container {
+    margin-bottom: 20px;
+  }
+  
+  .filtro-categoria {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Grid de vehículos */
+  .vehiculos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Tarjetas de vehículos */
+  .vehiculo-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    color: white;
+  }
+  
+  .vehiculo-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .vehiculo-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .vehiculo-info {
+    padding: 15px;
+    color: white;
+  }
+  
+  h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+    color: white;
+  }
+  
+  p {
+    margin: 0 0 10px 0;
+    color: #ccc;
+  }
+  
+  .disponible {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .agotado {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  /* Acciones de vehículos */
+  .vehiculo-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .editar-vehiculo-button,
+  .borrar-vehiculo-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .editar-vehiculo-button {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .borrar-vehiculo-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .editar-vehiculo-button:hover {
+    background-color: #e0a800;
+  }
+  
+  .borrar-vehiculo-button:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 768px) {
+    .vehiculos-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+/* Acciones del encabezado para alinear el botón y el selector */
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  
+  .header-actions .filtro-categoria {
+    flex-grow: 1;
+    max-width: 300px;
+    text-align: left;
+  }
+  

@@ -1,0 +1,69 @@
+/* Estilo para el fondo de la página */
+.login-background {
+    background-image: url('../images/login.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Contenedor del formulario de login */
+  .login-container {
+    background-color: rgba(0, 0, 0, 0.24); /* Fondo blanco semitransparente */
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid white; /* Borde blanco visible */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white; /* Borde blanco para los campos de entrada */
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .login-button, .switch-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover, .switch-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  

@@ -1,0 +1,102 @@
+/* Fondo general de la página de detalle de la reserva */
+.detalle-reserva-background {
+    background-image: url('../assets/images/fondo-detalle-reserva.jpg'); /* Cambia la ruta según tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Contenedor principal */
+  .detalle-reserva-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* Estilo del título */
+  h2 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Información del vehículo */
+  .vehiculo-info {
+    margin-bottom: 20px;
+  }
+  
+  .vehiculo-photo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  p {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  /* Información del usuario */
+  .usuario-info {
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /* Acciones de la reserva */
+  .reserva-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .cancelar-button, .comprado-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancelar-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .cancelar-button:hover {
+    background-color: #c82333;
+  }
+  
+  .comprado-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .comprado-button:hover {
+    background-color: #218838;
+  }
+  
